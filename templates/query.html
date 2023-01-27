@@ -1,0 +1,234 @@
+
+  <!DOCTYPE html>
+  <html>
+    {% load static %}
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: Red;
+     color: white;
+     text-align: center;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="navbar">
+    <a href="/mainpg">Home</a>
+  
+    
+    <div class="dropdown">
+      <button class="dropbtn">Course
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="/python">Python</a>
+        <a href="">Devops</a>
+        <a href="/aws">AWS</a>
+        <a href="/java">Java</a>
+        <a href="/web">Web Angular</a>
+      </div>
+    </div>
+    <div>
+      <a href="/file_upload">Task/Project</a>
+      <a href="/home">Query</a>
+      <a href="/leave">Leave Form</a>
+    </div>
+    <div class="flex items-right space-x-10">
+      <a href="/login_user" class="px-4 py-3 rounded-xl text-white">Logout</a>
+    </div>
+    <p style="text-align:right;">
+      <label  style="color:white;">Welcome {{user.username}}&emsp;</label> 
+     </p>
+  </div>
+  </body>
+  </html> 
+<style>
+  body {
+          margin: 0 auto;
+          padding: 10 20px;
+        }
+  
+
+  .container {
+          border: 2px solid #dedede;
+          background-color: #f1f1f1;
+          border-radius: 5px;
+          padding: 10px;
+          margin: 10px 10px;
+        }
+        
+        .darker {
+          border-color: #ccc;
+          background-color: #ddd;
+        }
+        
+        .container::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        .container img {
+          float: left;
+          max-width: 60px;
+          width: 100%;
+          margin-right: 20px;
+          border-radius: 50%;
+        }
+        
+        .container img.right {
+          float: right;
+          margin-left: 20px;
+          margin-right:0;
+        }
+        .time-right {
+          float: right;
+          color: #aaa;
+        }
+        
+        .time-left {
+          float: left;
+          color: #999;
+        }
+          input[type=text], select {
+            width: 30%;
+            padding: 10px 20px;
+            margin: 8px 500px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            box-sizing: border-box;
+            }
+            input[type=submit] {
+            width: 30%;
+            background-color:#285e61;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 500px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+            .comment-box{
+              width: 50%
+              border: 1px solid Green;
+              margin: 50px 400px;
+              padding: 20px 10px;
+              font-family: 'poppins',sans-serif;
+              border-rdius: 20px;
+              margin-left: 25%
+              margin-top: 50px;
+              box-shadow: 0 10px 20px 10px rgb(300,300,300)
+            }
+            .comment-form input{
+            width: 50%;
+            padding: 10px;
+            margin: 10px 180px;
+            outline: none;
+            font-size: 18px;
+            font-family: 'poppins',sans-serif;
+            border: 1px solid #ddd;
+            color #777;
+            }
+            input[type=submit]:hover {
+            background-color: #45a049;
+            }
+            #bg{
+                background-size: 1600px 900px;
+                background-repeat: no-repeat;
+                background-position: top;
+                background-attachment: fixed;
+            };
+        
+            
+</style>
+<div align="center">
+  <h1>BTS Training Institute</h1>
+</div>
+<body id="bg" style="background-image: url('{% static "img/book1.jpg"%}')";>
+<div class="comment-box"> 
+    <form id="post-form" method="POST" action="/checkview" class="comment-form">
+      {% csrf_token %}
+      <input type="text" name="room_name" placeholder="Class Id...." id="room_name" required width="100px" />
+      <input type="text" name="username" id="username" placeholder="Username..." required width="100px" /><br>
+      {% for message in messages %}
+        <div class="alert alert-danger" role="alert">
+          <p class="text-danger h3">
+            <center><label style = "color:red;">{{message}}</label></center>
+          </p>
+        </div>
+      {% endfor %}
+      <input type="submit" value="Submit">
+
+    </body>
+    </form>
+</div>

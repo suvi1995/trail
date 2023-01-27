@@ -1,0 +1,5 @@
+ function
+selection
+condtion
+o/p
+.split()---> use to count the sentance 

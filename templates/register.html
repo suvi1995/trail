@@ -1,0 +1,74 @@
+{% include "base.html" %}
+{% load static %}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+        <style>
+            #bg{
+                background-size: 1800px 900px;
+                background-repeat: no-repeat;
+                background-position: top;
+                background-attachment: fixed;
+            };
+    
+        </style>
+        <body id="bg" style="background-image: url('{% static "img/img3.jpg"%}')";>
+        <div class="p-10 lg:p-10 text-center">
+            <h4 class="text-3xl lg:text-3xl text-white">Register your Details</h4>
+
+        </div>
+        <div class="form-group">
+            {% for message in messages %}
+            <div class="alert alert-danger" role="alert">
+                <p class="text-danger h3">
+                   <center><label style = "color:Green;">{{message}}</label></center>
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="mb-5">
+            <form method="post" action="{% url "fileapp:register" %}" class="lg:w-1/4 px-4 mx-auto">
+                {% csrf_token %}
+                <div class="mb-4">
+                    <input type="text" name="fname" placeholder="First Name..." required class="w-full mt-2 px-4 py-2 rounded-xl">
+                </div>
+                <div class="mb-4">
+                    <input type="text" name="lname" placeholder="Last Name..." required class="w-full mt-2 px-4 py-2 rounded-xl">
+                </div>
+                <div class="mb-4">
+                    <input type="date" name="dob" placeholder="Date of Birth..." required class="w-full mt-2 px-4 py-2 rounded-xl">
+                </div>
+                <div class="mb-4">
+                    <select id="gen" name="gen" class="w-full mt-2 px-4 py-2 rounded-xl">
+                    <option value="Select">Select</option>
+	                <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <input type="text" name="eid" placeholder="E-mail Id..." required class="w-full mt-2 px-4 py-2 rounded-xl">
+                </div>
+                <div class="mb-4">
+                    <input type="text" name="mno" placeholder="Mobile Number..." required class="w-full mt-2 px-4 py-2 rounded-xl">
+                </div>
+                <div class="mb-4">
+                    <select id="course" name="course" class="w-full mt-2 px-4 py-2 rounded-xl">
+                        <option placeholder="Select your Course">Select</option>
+                        <option value="Python">Python</option>
+                        <option value="Web Angular">Web Angular</option>
+                        <option value="Java">Java</option>
+                        <option value="Devops">Devops</option>
+                        <option value="AWS">AWS</option>
+                    </select>
+                </div>
+           
+                <button class="px-5 py-3 rounded-xl text-white bg-teal-800 hover:bg-teal-700">Register</button>
+            </div>
+                </div>
+                
+            </form>
+        </div>
+    </body> 
+</html>

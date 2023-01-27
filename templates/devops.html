@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  {% load static %} 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: Red;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="/mainpg">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Course
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/python">Python</a>
+      <a href="/devops">Devops</a>
+      <a href="/aws">AWS</a>
+      <a href="/java">Java</a>
+      <a href="/web">Web Angular</a>
+    </div>
+  </div>
+  <div>
+    <a href="/file_upload">Task/Project</a>
+    <a href="/home">Query</a>
+    <a href="/leave">Leave Form</a>
+  </div>
+  <div class="flex items-right space-x-10">
+    <a href="/login_user" class="px-4 py-3 rounded-xl text-white">Logout</a>
+  </div>
+  <p style="text-align:right;">
+    <label  style="color:white;">Welcome {{user.username}}&emsp;</label> 
+   </p>
+  
+  </form>
+  
+</div>
+</body>
+</html>
+<h1><center>BTS Traning Institute</center></h1>
+<h2>DevOps Training Course Syllabus</h2>
+<p>We have framed an industry-relevant DevOps Course Syllabus in our DevOps Training Institute in Chennai to equip
+ you according to the requirements of global industries. Our experts have included all the significant topics and concepts 
+that are sought-after in the industries in our DevOps Course Curriculum and our trainers are having updated knowledge of 
+them. Check out the detailed DevOps Course Content below that is offered in our DevOps Training Course in Chennai at 
+BTS.</p>
+
+<h4>Introduction to Devops</h4>
+&#x2022; &emsp; What Is Devops<br>
+&#x2022; &emsp; History of Devops<br>
+&#x2022; &emsp; Devops definition<br>
+&#x2022; &emsp; DevOps Main Objectives<br>
+&#x2022; &emsp; DevOps and Software Development Life Cycle<br>
+&#x2022; &emsp; Waterfall Model<br>
+&#x2022; &emsp; Agile Model<br>
+&#x2022; &emsp; Continuous Integration & Deployment<br>
+&#x2022; &emsp; Jenkins<br>
+&#x2022; &emsp; Containers and Virtual Development<br>
+&#x2022; &emsp; Docker<br>
+&#x2022; &emsp; Vagrant<br>
+&#x2022; &emsp; Configuration Management Tools<br>
+&#x2022; &emsp; Ansible<br>
+&#x2022; &emsp; Puppet<br>
+&#x2022; &emsp; Chef<br>
+<h4>Cloud Computing</h4>
+&#x2022; &emsp; What is Cloud?<br>
+&#x2022; &emsp; Evolution of Cloud Computing<br>
+&#x2022; &emsp; IAAS (Infrastructure as a Service)<br>
+&#x2022; &emsp; SAAS (Software as a Service)<br>
+&#x2022; &emsp; PAAS (Platform as a Service)<br>
+&#x2022; &emsp; Private, Public and Hybrid Cloud<br>
+&#x2022; &emsp; Public Clouds<br>
+&#x2022; &emsp; Amazon Web Services<br>
+&#x2022; &emsp; Microsoft Azure<br>
+&#x2022; &emsp; Google Cloud Services<br>
+<h4>LINUX Basic and Admin</h4>
+&#x2022; &emsp; Linux OS Introduction<br>
+&#x2022; &emsp; Importance of Linux in DevOps<br>
+&#x2022; &emsp; Linux Basic Command Utilities<br>
+&#x2022; &emsp; Linux Administration<br>
+&#x2022; &emsp; Environment Variables<br>
+&#x2022; &emsp; Networking<br>
+&#x2022; &emsp; Linux Server Installation<br>
+&#x2022; &emsp; RPM and YUM Installation<br>
+&#x2022; &emsp; Shell Scripting
+&#x2022; &emsp; Introduction<br>
+&#x2022; &emsp; Variables<br>
+&#x2022; &emsp; Flow Controls<br>
+&#x2022; &emsp; Loops<br>
+&#x2022; &emsp; Functions<br>
+&#x2022; &emsp; Lists<br>
+&#x2022; &emsp; Manipulating Strings<br>
+&#x2022; &emsp; Reading and Writing Files<br>
+&#x2022; &emsp; Positional Parameters<br>
+&#x2022; &emsp; Continuous Integration – Jenkins<br>
+&#x2022; &emsp; Introduction to Jenkins<br>
+&#x2022; &emsp; Continuous Integration with Jenkins<br>
+&#x2022; &emsp; Configure Jenkins<br>
+&#x2022; &emsp; Jenkins Management<br>
+&#x2022; &emsp; Scheduling build Jobs<br>
+&#x2022; &emsp; POLL SCM<br>
+&#x2022; &emsp; Build Periodically<br>
+&#x2022; &emsp; Maven Build Scripts<br>
+&#x2022; &emsp; Support for the GIT version control System<br>
+&#x2022; &emsp; Different types of Jenkins Jobs<br>
+&#x2022; &emsp; Jenkins Build Pipe Line<br>
+&#x2022; &emsp; Parent and Child Builds<br>
+&#x2022; &emsp; Sequential Builds<br>
+&#x2022; &emsp; Jenkins Master & Slave Node Configuration<br>
+&#x2022; &emsp; Jenkins Workspace Management<br>
+&#x2022; &emsp; Securing Jenkins<br>
+&#x2022; &emsp; Authentication<br>
+&#x2022; &emsp; Authorization<br>
+&#x2022; &emsp; Confidentiality<br>
+&#x2022; &emsp; Creating Users<br>
+&#x2022; &emsp; Jenkins Plugins<br>
+&#x2022; &emsp; Installing Jenkins Plugins<br>
+&#x2022; &emsp; SCM plugin<br>
+&#x2022; &emsp; Build and test<br>
+<h4>Version Control-GIT</h4>
+&#x2022; &emsp; GIT Features<br>
+&#x2022; &emsp; 3-Tree Architecture<br>
+&#x2022; &emsp; GIT – Clone /Commit / Push<br>
+&#x2022; &emsp; GIT Hub Projects<br>
+&#x2022; &emsp; GIT Hub Management<br>
+&#x2022; &emsp; GIT Rebase & Merge<br>
+&#x2022; &emsp; GIT Stash, Reset, Checkout<br>
+&#x2022; &emsp; GIT Clone, Fetch, Pull<br>
+&#x2022; &emsp; Build tool- Maven<br>
+&#x2022; &emsp; Maven Installation<br>
+&#x2022; &emsp; Maven Build requirements<br>
+&#x2022; &emsp; Maven POM Builds (pom.xml)<br>
+&#x2022; &emsp; Maven Build Life Cycle<br>
+&#x2022; &emsp; Maven Local Repository (.m2)<br>
+&#x2022; &emsp; Maven Global Repository<br>
+&#x2022; &emsp; Group ID, Artifact ID, Snapshot<br>
+&#x2022; &emsp; Maven Dependencies<br>
+&#x2022; &emsp; Maven Plugins<br>
+<h4>ANSIBLE</h4>
+&#x2022; &emsp; Introduction to Ansible<br>
+&#x2022; &emsp; Ansible Server Configuration<br>
+&#x2022; &emsp; Infrastructure Management<br>
+&#x2022; &emsp; SSH Connection in Ansible Master<br>
+&#x2022; &emsp; YAML Scripts<br>
+&#x2022; &emsp; Host Inventory<br>
+&#x2022; &emsp; Hosts and Groups<br>
+&#x2022; &emsp; Host Variables<br>
+&#x2022; &emsp; Group Variables<br>
+&#x2022; &emsp; Host and Group Specific Data<br>
+&#x2022; &emsp; Ad-hoc Commands<br>
+&#x2022; &emsp; Playbooks<br>
+&#x2022; &emsp; Variables<br>
+&#x2022; &emsp; Conditionals<br>
+&#x2022; &emsp; Loops<br>
+&#x2022; &emsp; Blocks<br>
+&#x2022; &emsp; Handlers<br>
+&#x2022; &emsp; Templates<br>
+&#x2022; &emsp; Modules<br>
+&#x2022; &emsp; Core Modules<br>
+&#x2022; &emsp; Extra Modules<br>
+&#x2022; &emsp; Ansible Roles<br>
+<h4>Docker</h4>
+&#x2022; &emsp; How to get Docker Image?<br>
+&#x2022; &emsp; What is Docker Image<br>
+&#x2022; &emsp; Docker Installation<br>
+&#x2022; &emsp; Working with Docker Containers<br>
+&#x2022; &emsp; What is Container<br>
+&#x2022; &emsp; Docker Engine<br>
+&#x2022; &emsp; Crating Containers with an Image<br>
+&#x2022; &emsp; Working with Images<br>
+&#x2022; &emsp; Docker Command Line Interphase<br>
+&#x2022; &emsp; Docker Compose<br>
+<form action="home.py" method="post">
+<center><input type="submit" value="Close"></center>
+</form>

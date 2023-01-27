@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  {% load static %} 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: Red;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="/mainpg">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Course
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/python">Python</a>
+      <a href="/devops">Devops</a>
+      <a href="/aws">AWS</a>
+      <a href="/java">Java</a>
+      <a href="/web">Web Angular</a>
+    </div>
+  </div>
+  <div>
+    <a href="/file_upload">Task/Project</a>
+    <a href="/home">Query</a>
+    <a href="/leave">Leave Form</a>
+  </div>
+  <div class="flex items-right space-x-10">
+    <a href="/login_user" class="px-4 py-3 rounded-xl text-white">Logout</a>
+  </div>
+  
+  </form>
+  
+</div>
+</body>
+</html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <div class="p-10 lg:p-10 text-center">
+        <h1 class="text-3xl lg:text-5xl text-blue">BTS Training Institute </h1><br>
+        <h5>Please upload Task/Project here.</h5>
+
+    </div>
+    <style>
+      #bg{
+          background-size: 1650px 750px;
+          background-repeat: no-repeat;
+          background-position: top;
+          background-attachment: fixed;
+      };
+
+  </style>
+    <style>
+      
+      .comment-box{
+          width: 50%
+          border: 1px solid #ccc;
+          margin: 30px 400px;
+          padding: 10px 10px;
+          font-family: 'poppins',sans-serif;
+          border-rdius: 10px;
+          margin-left: 25%
+          margin-top: 50px;
+          box-shadow: 10px 10px 20px 10px rgb(300,300,300)
+      }
+      .comment-form input, .comment-form textarea{
+          width: 90%;
+          padding: 10px;
+          margin: 8px 0;
+          outline: none;
+          font-size: 18px;
+          font-family: 'poppins',sans-serif;
+          border: 1px solid #ddd;
+          color #777;
+          }
+      .comment-form button{
+          margin: 10px 0;
+          border: none;
+          background-color: #d0d0d0;
+          padding: 10px;
+          font-size: 18px;
+          border-radius: 6px;
+          color: #444;
+          }
+          button:hover{
+              color: white;
+              background-color: #444;
+          }       
+  
+</style>   
+</head>
+
+<body id="bg" style="background-image: url('{% static "img/bk1.jpg"%}')";>
+          <div class="comment-box">
+            <form action="{% url 'fileapp:uploads' %}" method="POST" enctype="multipart/form-data" class="comment-form">
+                {% csrf_token %}
+                <center><input type="text" placeholder="Enter Project/Task Title" name='title' required><br></center>
+                <center><input type="file" multiple name="uploadfiles"><br><br>
+                  <div class="form-group">
+                    {% for message in messages %}
+                    <div class="alert alert-danger" role="alert">
+                        <p class="text-danger h3">
+                           <center><label style ="color: green;">{{message}}</label></center>
+                        </p>
+                    </div>
+                    {% endfor %}
+                </div>
+                <button class="px-5 py-3 rounded-xl text-white bg-teal-800 hover:bg-teal-700">Upload</button></center>
+            </form>
+          </div>
+        </body>
+        
+    </body>
+
+   
+</html>

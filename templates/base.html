@@ -1,0 +1,128 @@
+
+  <!DOCTYPE html>
+  <html>
+    {% load static %}
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: Red;
+     color: white;
+     text-align: center;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="navbar">
+    <a href="/mainpg">Home</a>
+  
+    
+    <div class="dropdown">
+      <button class="dropbtn">Course
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="/python">Python</a>
+        <a href="">Devops</a>
+        <a href="/aws">AWS</a>
+        <a href="/java">Java</a>
+        <a href="/web">Web Angular</a>
+      </div>
+    </div>
+    <div>
+      <a href="/file_upload">Task/Project</a>
+      <a href="/home">Query</a>
+      <a href="/leave">Leave Form</a>
+    </div>
+    <div class="flex items-right space-x-10">
+      <a href="/login_user" class="px-4 py-3 rounded-xl text-white">Logout</a>
+    </div>
+  </div>
+  </body>
+  </html>
+  <div>
+    {% for item in all %}
+    <tbody>
+        <tr align="center">
+            <td>{{forloop.counter}}</td>
+            <td>{{item.first_name}}</td>
+            <td>{{item.dob}}</td>
+            <td>{{item.gender}}</td>
+            <td>{{item.mail}}</td>
+            <td>{{item.mobile_number}}</td>
+            <td>{{item.course}}</td>
+        </tr>
+    </tbody>
+    {% endfor %}
+        
+  </div>

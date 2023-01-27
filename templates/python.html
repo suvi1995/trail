@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  {% load static %} 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: Red;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="/mainpg">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Course
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/python">Python</a>
+      <a href="/devops">Devops</a>
+      <a href="/aws">AWS</a>
+      <a href="/java">Java</a>
+      <a href="/web">Web Angular</a>
+    </div>
+  </div>
+  <div>
+    <a href="/file_upload">Task/Project</a>
+    <a href="/home">Query</a>
+    <a href="/leave">Leave Form</a>
+  </div>
+  <div class="flex items-right space-x-10">
+    <a href="/login_user" class="px-4 py-3 rounded-xl text-white">Logout</a>
+  </div>
+  <p style="text-align:right;">
+    <label  style="color:white;">Welcome {{user.username}}&emsp;</label> 
+   </p>
+  
+  </form>
+  
+</div>
+</body>
+</html><h1><center>BTS Traning Institute</center></h1>
+<title>Python Syllabus</title>
+<h1>Python Course Syllabus</h1>
+<h3>What is Python?</h3>
+&#x2022; &emsp; Comparison of Python with other languages like C/C++, Java etc<br>
+&#x2022; &emsp; Execution model of Python<br>
+&#x2022; &emsp; Salient features of Python<br>
+&#x2022; &emsp; How Python runs Programs?<br>
+&#x2022; &emsp; Areas where Python is in use<br>
+&#x2022; &emsp; Industries that are using Python<br>
+<h3>Introduction</h3>
+&#x2022; &emsp; Installing Python in Windows/Linux/Mac OS<br>
+&#x2022; &emsp; Using Python interpreter<br>
+&#x2022; &emsp; Execute a Script<br>
+&#x2022; &emsp; Structuring with Indentation<br>
+&#x2022; &emsp; Editors<br>
+<h3>Datatype and Variables</h3>
+
+&#x2022; &emsp; Variables<br>
+&#x2022; &emsp; Variables v/s identifiers<br>
+&#x2022; &emsp; Naming convention of variables<br>
+&#x2022; &emsp; Keywords<br>
+<h3>String</h3>
+
+&#x2022; &emsp; Single-quote, double quote and multi-line strings<br>
+&#x2022; &emsp; String Operations ( Concatenation,  Repetition, Indexing, Slicing, Splitting and joining )<br>
+<h3>Control Flow</h3>
+
+&#x2022; &emsp; If/Else Statements<br>
+&#x2022; &emsp; For/while Statements<br>
+&#x2022; &emsp; Range() function<br>
+&#x2022; &emsp; Break and continue statements<br>
+&#x2022; &emsp; Else clauses on Loops<br>
+&#x2022; &emsp; Pass statements<br>
+<h3>Functions</h3>
+
+&#x2022; &emsp; Defining Function<br>
+&#x2022; &emsp; Default Argument<br>
+&#x2022; &emsp; Keyword Argument<br>
+&#x2022; &emsp; Arbitrary Arguments List<br>
+&#x2022; &emsp; Unpacking Argument List<br>
+&#x2022; &emsp; Documentation Strings<br>
+<h3>List Data Structure</h3>
+
+&#x2022; &emsp; Indexing<br>
+&#x2022; &emsp; Slicing<br>
+&#x2022; &emsp; Sorting<br>
+&#x2022; &emsp; List Comprehensions<br>
+&#x2022; &emsp; Appending to the list<br>
+&#x2022; &emsp; Extending the list<br>
+&#x2022; &emsp; Repetitions<br>
+<h3>Tuples</h3>
+
+&#x2022; &emsp; Immutable objects<br>
+&#x2022; &emsp; Indexing<br>
+&#x2022; &emsp; Slicing<br>
+&#x2022; &emsp; Sorting<br>
+&#x2022; &emsp; Tuple Comprehensions<br>
+<h3>Sets</h3>
+
+&#x2022; &emsp; Immutable objects<br>
+&#x2022; &emsp; Add, Clear, Copy Sets<br>
+&#x2022; &emsp; Difference<br>
+&#x2022; &emsp; Intersection<br>
+&#x2022; &emsp; free-demo-class<br>
+<h3>Dictionaries</h3>
+
+&#x2022; &emsp; Iterating over dictionaries<br>
+&#x2022; &emsp; Accessing non existing keys<br>
+&#x2022; &emsp; Copy dictionaries<br>
+&#x2022; &emsp; Lists from dictionaries<br>
+<h3>Input and Output</h3>
+
+&#x2022; &emsp; Input function<br>
+&#x2022; &emsp; Input with raw_input()<br>
+&#x2022; &emsp; Output with old string format<br>
+&#x2022; &emsp; Python format function<br>
+<h3>File handling</h3>
+
+&#x2022; &emsp; Reading from the file<br>
+&#x2022; &emsp; Writing to the file<br>
+&#x2022; &emsp; Methods of file objects<br>
+<h3>Error and Exceptionst</h3>
+
+&#x2022; &emsp; Syntax Errors<br>
+&#x2022; &emsp; Exceptions<br>
+&#x2022; &emsp; Handling Exceptions (try, except)<br>
+&#x2022; &emsp; Raising Exceptions (raise)<br>
+&#x2022; &emsp; Clean-up Actions (try… finally)<br>
+&#x2022; &emsp; Else Clause<br>
+&#x2022; &emsp; Assert statements<br>
+<h3>Class Concept</h3>
+
+&#x2022; &emsp; Class Syntax<br>
+&#x2022; &emsp; Class Objects<br>
+&#x2022; &emsp; Instance Objects<br>
+&#x2022; &emsp; Method Objects<br>
+&#x2022; &emsp; Class and Instance Variables<br>
+<h3>Inheritance</h3>
+
+&#x2022; &emsp; Multiple Inheritance<br>
+<h3>Data Encapsulation</h3>
+
+&#x2022; &emsp; Public<br>
+&#x2022; &emsp; Private<br>
+&#x2022; &emsp; Protected<br>
+<h3>Module</h3>
+
+&#x2022; &emsp; Creating Modules<br>
+&#x2022; &emsp; Import a module<br>
+&#x2022; &emsp; Import the names<br>
+&#x2022; &emsp; Executing modules as scripts<br>
+&#x2022; &emsp; Standard Modules<br><br>
+

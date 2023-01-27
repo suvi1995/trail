@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: Red;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="/mainpg">Home</a>
+  <a href="/register">Register</a>
+  <div class="dropdown">
+    <button class="dropbtn">Course
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/python">Python</a>
+      <a href="/devops">Devops</a>
+      <a href="/aws">AWS</a>
+      <a href="/java">Java</a>
+      <a href="/web">Web Angular</a>
+    </div>
+  </div>
+  <div>
+    <a href="/file_upload">Task/Project</a>
+    <a href="/home">Query</a>
+    <a href="/leave">Leave Form</a>
+  </div>
+  <div class="flex items-right space-x-10">
+    <a href="/login_user" class="px-4 py-3 rounded-xl text-white">Logout</a>
+  </div>
+
+  <p style="text-align:right;">
+    <label  style="color:white;">Welcome {{user.username}}&emsp;</label> 
+   </p>
+    
+ 
+</div>
+
+
+<h1><center>BTS Traning Institute</center></h1>
+<h4>BTS Traning Institute, is one of the best Online Software Training Institute in Chennai with 100% Placement Support, rooted
+in this adage saying, “Give a man a fish, and you feed him for a day; teach a man to fish, and you feed him for a lifetime”,
+intends to train its fellow students in all aspects right from technical expertise to attitudinal molding thereby enabling
+the individual to become Independent so that he / she becomes a potential and a committed employee today and a probable
+entrepreneur tomorrow.</h4>
+<p style="text-indent: 25px;">
+
+  &#x2022; &emsp; Rich Corporate Exposure and Expertise since 1995.<br>
+</p>
+<p style="text-indent: 25px;">
+  &#x2022; &emsp; Premium and effective Employability Training.<br>
+</p>
+<p style="text-indent: 25px;">
+  &#x2022; &emsp; Trainers with real time experience in MNCs.<br>
+</p>
+<p style="text-indent: 25px;">
+  &#x2022; &emsp; High end Infrastructural facilities.<br>
+</p>
+<p style="text-indent: 25px;">
+  &#x2022; &emsp; Industry endorsed curriculum (Syllabus is specifically designed for students to become JOB Ready).<br>
+</p>
+
+<p>All courses are power packed with multiple projects, so that the student is enabled to create a project portfolio to present during
+Interviews.</p>
+Real Time Internship provided for interested students.<br>
+Special Aptitude and Soft skills classes are given for all courses free of cost to help students become JOB Ready.<br>
+We offer 100% placement support by helping the students with Interviews until they get placed.<br>
+We are the only company who offers free interview training services until the students get placed.<br>
+We are the only company who supports students with free placement services at all levels of their career.<br>
+<p>BTS is one of the top Computer Training Institutes in Chennai specializing in all leading IT Technologies delivering quality
+training solutions to ambitious students. We at Softlogic are bound by all ethical means, never buy jobs for our students, instead
+we equip them with the required job skills, thereby developing independent and dedicated employees. We have placed more than 65000
+individuals in India and abroad through our employability training programs and so we are well-known as one of the best Placement
+Training Institutes in India.</p>
+<p>Our Goal is your Career Advancement. This goal can definitely be accomplished, if you give your commitment in your attendance,
+assessments and execution of projects. Be rest assured, joining with us, your Career is a sure shot hit!</p>
+<div class="footer">
+  <p>BTS Training Institue</p>
+</div>
+
+
+</body>
+
+</html>

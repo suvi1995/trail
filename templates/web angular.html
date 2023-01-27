@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  {% load static %} 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: Red;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="/mainpg">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Course
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/python">Python</a>
+      <a href="/devops">Devops</a>
+      <a href="/aws">AWS</a>
+      <a href="/java">Java</a>
+      <a href="/web">Web Angular</a>
+    </div>
+  </div>
+  <div>
+    <a href="/file_upload">Task/Project</a>
+    <a href="/home">Query</a>
+    <a href="/leave">Leave Form</a>
+  </div>
+  <div class="flex items-right space-x-10">
+    <a href="/login_user" class="px-4 py-3 rounded-xl text-white">Logout</a>
+  </div>
+  <p style="text-align:right;">
+    <label  style="color:white;">Welcome {{user.username}}&emsp;</label> 
+   </p>
+  
+  </form>
+  
+</div>
+</body>
+</html>
+<h1><center>BTS Traning Institute</center></h1>
+
+<h3>HTML Training Course Content</h3>
+<p>The syllabus of HTML training in Chennai is meticulously prepared so as to encompass all the relevant concepts of this 
+dynamic component. You will learn in detail about HTML5, which is the latest version of HTML. We have prepared the syllabus 
+such that it meets the current industry standards. It is updated in a constant basis. We ensure that you get the confidence 
+to attend the interviews through our updated syllabus.</p>
+
+<h4>HTML Overview</h4>
+
+&#x2022; &emsp; HTML Editing Tools<br>
+&#x2022; &emsp; WYSISYG Authoring Tools<br>
+&#x2022; &emsp; Document Structure<br>
+&#x2022; &emsp; HTML Tags<br>
+&#x2022; &emsp; Information browsers ignore<br>
+&#x2022; &emsp; Tips on good HTML style<br>
+&#x2022; &emsp; Specifying Color in HTML<br>
+<h4>Structural HTML Tags</h4>
+
+&#x2022; &emsp; The Summary of Structural Tags<br>
+&#x2022; &emsp; Setting up an HTML document<br>
+&#x2022; &emsp; The global settings with the “BODY” tag<br>
+&#x2022; &emsp; Using META tag<br>
+<h4>Formatting Text</h4>
+
+&#x2022; &emsp; The summary of Text tags<br>
+&#x2022; &emsp; Working with HTML text<br>
+&#x2022; &emsp; The inline type styles<br>
+&#x2022; &emsp; The FONT tag<br>
+&#x2022; &emsp; The Lists<br>
+&#x2022; &emsp; The layout techniques with HTML<br>
+<h4>Creating Links</h4>
+
+&#x2022; &emsp; The summary of tags related to linking<br>
+&#x2022; &emsp; Simple Hypertext links<br>
+&#x2022; &emsp; Linking within a document<br>
+&#x2022; &emsp; Affecting the appearance of links<br>
+&#x2022; &emsp; Targeting windows<br>
+&#x2022; &emsp; The Image maps<br>
+&#x2022; &emsp; Non-Web links and protocols<br>
+<h4>Adding images and other page elements</h4>
+
+&#x2022; &emsp; The summary of object placement tags<br>
+&#x2022; &emsp; Horizontal rules<br>
+&#x2022; &emsp; The Image basics<br>
+&#x2022; &emsp; The IMG tag and its attributes<br>
+&#x2022; &emsp; Adding Java Applets to the page<br>
+&#x2022; &emsp; Adding Plug-in Media with EMBED<br>
+&#x2022; &emsp; Adding Media files with OBJECT<br>
+<h4>Tables</h4>
+
+&#x2022; &emsp; The summary of Table tags<br>
+&#x2022; &emsp; Introduction to tables<br>
+&#x2022; &emsp; The Basic table structure<br>
+&#x2022; &emsp; Affecting table appearance<br>
+&#x2022; &emsp; Table troubleshooting<br>
+&#x2022; &emsp; Tips and tricks<br>
+&#x2022; &emsp; Standard table templates<br>
+&#x2022; &emsp; Multipart images in tables<br>
+<h4>Frames</h4>
+
+&#x2022; &emsp; The summary of Frame tags<br>
+&#x2022; &emsp; Introduction to frames<br>
+&#x2022; &emsp; The basic frameset structure<br>
+&#x2022; &emsp; The frame function and appearance<br>
+&#x2022; &emsp; Targeting frames<br>
+&#x2022; &emsp; The Inline (Floating) frames<br>
+&#x2022; &emsp; Frame design tips and tricks<br>
+<h4>Forms</h4>
+
+&#x2022; &emsp; Summary of FORM tags<br>
+&#x2022; &emsp; Introduction to Forms<br>
+&#x2022; &emsp; The basic form (FORM)<br>
+&#x2022; &emsp; The FORM elements<br>
+&#x2022; &emsp; The New FORM attributes (HTML 4.0)<br>
+&#x2022; &emsp; Affecting the appearance of forms<br>
+&#x2022; &emsp; Unconventional use of FORM elements<br>
+&#x2022; &emsp; Demystifying CGI<br>
+&#x2022; &emsp; Retrieving the parameter value using getParameter () method<br>
+<h4>Server Side includes (SSI)</h4>
+
+&#x2022; &emsp; How SSI is used<br>
+&#x2022; &emsp; The SSI and the server<br>
+&#x2022; &emsp; Adding SSI commands to a document<br>
+&#x2022; &emsp; Using environment variables<br>
+&#x2022; &emsp; The XSSI<br>
+&#x2022; &emsp; The List of elements<br>
+&#x2022; &emsp; The Include variables<br>
+&#x2022; &emsp; Time formats for SSI output<br>

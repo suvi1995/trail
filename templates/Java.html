@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  {% load static %} 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: Red;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="/mainpg">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Course
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/python">Python</a>
+      <a href="/devops">Devops</a>
+      <a href="/aws">AWS</a>
+      <a href="/java">Java</a>
+      <a href="/web">Web Angular</a>
+    </div>
+  </div>
+  <div>
+    <a href="/file_upload">Task/Project</a>
+    <a href="/home">Query</a>
+    <a href="/leave">Leave Form</a>
+  </div>
+  <div class="flex items-right space-x-10">
+    <a href="/login_user" class="px-4 py-3 rounded-xl text-white">Logout</a>
+  </div>
+  <p style="text-align:right;">
+    <label  style="color:white;">Welcome {{user.username}}&emsp;</label> 
+   </p>
+  
+  </form>
+  
+</div>
+</body>
+</html>
+<h1><center>BTS Traning Institute</center></h1>
+
+<h2>Core Java Training Syllabus</h2>
+<p>The syllabus for Core Java training at Softlogic is carefully prepared so as to satisfy the industry requirements. 
+The Core Java syllabus is differentiated from the Advance Java Syllabus so that the candidate has a clear idea of the 
+concepts. The trainers teach the content of the curriculum in an efficient way and also give importance to the pace of 
+learning of the candidates.</p>
+
+<h4>Introduction:</h4>
+
+&#x2022; &emsp; Why Java<br>
+&#x2022; &emsp; Paradigms<br>
+&#x2022; &emsp; Diff B/W Java & Other (C,C++)<br>
+&#x2022; &emsp; Java History<br>
+&#x2022; &emsp; Java Features<br>
+&#x2022; &emsp; Java programming format<br>
+&#x2022; &emsp; Java Statements<br>
+&#x2022; &emsp; Java Data Types<br>
+<h4>OOPS (Object Oriented Programming & Systems)</h4>
+
+&#x2022; &emsp; Introduction<br>
+&#x2022; &emsp; Object<br>
+&#x2022; &emsp; Constructors<br>
+&#x2022; &emsp; This Key Word<br>
+&#x2022; &emsp; Inheritance<br>
+&#x2022; &emsp; Super Key Word<br>
+&#x2022; &emsp; Polymorphism (Over Loading & Over Riding)<br>
+&#x2022; &emsp; Abstraction<br>
+&#x2022; &emsp; Interface<br>
+&#x2022; &emsp; Encapsulation<br>
+&#x2022; &emsp; Introduction to all predefined packages<br>
+&#x2022; &emsp; User Defined Packages<br>
+&#x2022; &emsp; Access Specifiers<br>
+<h4>STRING Manipulation:</h4>
+
+&#x2022; &emsp; String<br>
+&#x2022; &emsp; String Buffer<br>
+<h4>Array</h4>
+
+&#x2022; &emsp; What is Array<br>
+&#x2022; &emsp; Single Dimensional Array<br>
+&#x2022; &emsp; Multi Dimensional Array<br>
+&#x2022; &emsp; Sorting of Arrays<br>
+<h4>Wrapper Classes</h4>
+
+&#x2022; &emsp; Introduction<br>
+&#x2022; &emsp; Byte, Short, Integer, Long, Float, Double, Character
+&#x2022; &emsp; Boolean classes<br>
+<h4>Inner Classes:</h4>
+
+&#x2022; &emsp; Introduction<br>
+&#x2022; &emsp; Member Inner Class<br>
+&#x2022; &emsp; Static Inner Class<br>
+&#x2022; &emsp; Local Inner Class<br>
+&#x2022; &emsp; Anonymous Inner Class<br>
+<h4>Collection Frame Work:</h4>
+
+Introduction<br>
+&#x2022; &emsp; Util Package interfaces, List, Set, Map<br>
+&#x2022; &emsp; List Interface 7 Its Classes<br>
+&#x2022; &emsp; Set Interface & Its Classes<br>
+&#x2022; &emsp; Map Interface & Is Classes<br>
+<h4>AWT:</h4>
+
+&#x2022; &emsp; Introduction<br>
+&#x2022; &emsp; Components<br>
+&#x2022; &emsp; Event-Delegation-Model<br>
+&#x2022; &emsp; Listeners<br>
+&#x2022; &emsp; Layouts<br>
+&#x2022; &emsp; Individual Components Lable, Button, Check Box, Radio Button, Choice, List, Menu, Text Field, Text Area<br>
+<h4>SWING (JFC):</h4>
+
+&#x2022; &emsp; Introduction Diff B/W AWT and SWING<br>
+&#x2022; &emsp; Components hierarchy<br>
+&#x2022; &emsp; Panes<br>
+&#x2022; &emsp; Individual Swings components J Label JButton, JTextField, JTextAres<br><br>

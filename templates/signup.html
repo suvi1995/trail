@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}       
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <style>
+        #bg{
+            background-size: 1550px 730px;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-attachment: fixed;
+        };
+
+    </style>
+    
+    <body id="bg" style="background-image: url('{% static "img/img4.jpg"%}')";>
+        <nav class="flex items-center justify-between px-4 py-4 bg-teal-800">
+
+            <div>
+                <a href="/" class="text-xl text-white"><h2>BTS Training Institute</h2></a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="/login_user"class="px-4 py-3 rounded-xl text-white bg-teal-600 hover:bg-teal-700">Login</a>
+            </div>
+        </nav>
+        <div class="p-10 lg:p-5 text-center">
+            <h1 class="text-4xl lg:text-7xl" style="color:pink;">Signup</h1>
+        </div>
+        
+        <div class="mb-5">
+            <form method="post" action="{% url "fileapp:index" %}" class="lg:w-1/4 px-4 mx-auto">
+                {% csrf_token %}
+                {{form.as_p}}
+                <div class="mb-4">
+                    <input type="text" name="uname" placeholder="Username..." required class="w-full mt-2 px-4 py-2 rounded-xl">
+                </div>
+                <div class="mb-4">
+                    <input type="text" name="mail" placeholder="Email..." required class="w-full mt-2 px-4 py-2 rounded-xl">
+                </div>
+                <div class="mb-4">
+                    <input type="password" name="pwd1" placeholder="Password..." required class="w-full mt-2 px-4 py-2 rounded-xl">
+                </div>
+                <div class="mb-4">
+                    <input type="password" name="pwd2" placeholder="Confirm Password..." required class="w-full mt-2 px-4 py-2 rounded-xl">
+                </div>
+                <div class="mb-4">
+                    <select id="course" name="us" class="w-full mt-2 px-4 py-2 rounded-xl">
+                        <option placeholder="Select your Course">User</option>
+                        <option value="Student">Student</option>
+                        <option value="Staff">Staff</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    {% for message in messages %}
+                    <div class="alert alert-danger" role="alert">
+                        <p class="text-danger h3">
+                           <center><label style = "color:red;">{{message}}</label></center>
+                        </p>
+                    </div>
+                    {% endfor %}
+                </div> 
+                <button class="px-5 py-3 rounded-xl text-white bg-teal-800 hover:bg-teal-700">Signup</button>
+                </div>
+            </form>
+            
+        </div>
+    </body>
+
+   
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+
+<body>
+<div class="sidenav">
+<a href="/smain">About</a>
+<a href="stdinfo">Studets Info</a>
+<a href="/stf_home">Inbox</a>
+<a href="/project">Project</a>
+<a href="/std_leave">Leave Report</a><br><br><br>
+
+<a>{{user.username}}<a>
+  <a>{{user.email}}<a>
+<a href="/login_user">Logout</a>
+</body>
+</div>
+<div class="main">
+  <h1><center>BTS Traning Institute</center></h1>
+  <p><h4>BTS Traning Institute, is one of the best Online Software Training Institute in Chennai with 100% Placement Support, rooted
+  in this adage saying, “Give a man a fish, and you feed him for a day; teach a man to fish, and you feed him for a lifetime”,
+  intends to train its fellow students in all aspects right from technical expertise to attitudinal molding thereby enabling
+  the individual to become Independent so that he / she becomes a potential and a committed employee today and a probable
+  entrepreneur tomorrow.</h4></p>
+  
+  Rich Corporate Exposure and Expertise since 1995.<br>
+  Premium and effective Employability Training.<br>
+  Trainers with real time experience in MNCs.<br>
+  High end Infrastructural facilities.<br>
+  Industry endorsed curriculum (Syllabus is specifically designed for students to become JOB Ready).<br>
+  <p>All courses are power packed with multiple projects, so that the student is enabled to create a project portfolio to present during
+  Interviews.</p>
+  <p>Our Goal is your Career Advancement. This goal can definitely be accomplished, if you give your commitment in your attendance,
+  assessments and execution of projects. Be rest assured, joining with us, your Career is a sure shot hit!</p>
+</html>

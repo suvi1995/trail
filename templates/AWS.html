@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  {% load static %} 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: Red;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="/mainpg">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Course
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/python">Python</a>
+      <a href="/devops">Devops</a>
+      <a href="/aws">AWS</a>
+      <a href="/java">Java</a>
+      <a href="/web">Web Angular</a>
+    </div>
+  </div>
+  <div>
+    <a href="/file_upload">Task/Project</a>
+    <a href="/home">Query</a>
+    <a href="/leave">Leave Form</a>
+  </div>
+  <div class="flex items-right space-x-10">
+    <a href="/login_user" class="px-4 py-3 rounded-xl text-white">Logout</a>
+  </div>
+  <p style="text-align:right;">
+    <label  style="color:white;">Welcome {{user.username}}&emsp;</label> 
+   </p>
+  
+  </form>
+  
+</div>
+</body>
+</html>
+<div class="main">
+</html><h1><center>BTS Traning Institute</center></h1>
+
+<h2>AWS Training Course Syllabus</h2>
+<p>Softllogic’s AWS course syllabus has been framed by AWS and cloud experts after assessing the recruitment needs and the 
+issues faced by the industry. We constantly update the syllabus to be abreast with latest AWS upgrades. We ensure that you 
+will be gaining knowledge on the latest cloud technology.</p>
+
+<p>The syllabus is prepared so that the students are the ideal candidates that the organizations expect. The syllabus is 
+also holistic with the fundamentals of Amazon S3, EC2 etc and also other services of AWS. The syllabus is updated once every 
+batch completes so as to comprise latest developments in AWS and take away the outdated topics.<p>
+
+<h4>Linux Fundamentals<h4>
+
+<h5>Installation and Initialization:</h5>
+
+&#x2022; &emsp; Installation, Package Selection<br>
+&#x2022; &emsp; Anatomy of a Kickstart File, Command line<br>
+&#x2022; &emsp; Introduction to Bash Shell<br>
+&#x2022; &emsp; System Initialization, Starting the Boot Process: GRUB<br>
+<h4>Boot and Package Management:</h4>
+
+&#x2022; &emsp; Configuring services to run at boot<br>
+&#x2022; &emsp; Securing single-user mode (SU login)<br>
+&#x2022; &emsp; Shutting down and rebooting the system<br>
+&#x2022; &emsp; RPM Package Manager, Installing and Removing Software, Updating a Kernel RPM<br>
+&#x2022; &emsp; Yum Command set, Install packages by using yum<br>
+&#x2022; &emsp; Apt-get command set, Apt-cache package management<br>
+<h4>User Administration:</h4>
+
+&#x2022; &emsp; Understanding different types of groups and creation of groups<br>
+&#x2022; &emsp; Creation of users in different groups<br>
+&#x2022; &emsp; Understanding Passwd, Shadow Files<br>
+&#x2022; &emsp; Understanding password aging<br>
+&#x2022; &emsp; Creation of quotas for users, groups and file systems<br>
+&#x2022; &emsp; Understanding users security files<br>
+&#x2022; &emsp; The different commands for Monitoring the users<br>
+&#x2022; &emsp; TROUBLESHOOTING<br>
+&#x2022; &emsp; Automation of jobs – Cron, at<br>
+<h4>Run levels:</h4>
+
+&#x2022; &emsp; Understanding the different types of run-levels<br>
+&#x2022; &emsp; Understanding different types of shutdown commands<br>
+&#x2022; &emsp; Understanding run control scripts<br>
+&#x2022; &emsp; Understanding the different types<br>
+<h4>Overview of the Service Protocols:</h4>
+
+&#x2022; &emsp; FTP<br>
+&#x2022; &emsp; DHCP<br>
+&#x2022; &emsp; DNS<br>
+&#x2022; &emsp; Apache<br>
+&#x2022; &emsp; Samba<br>
+&#x2022; &emsp; LVM<br>
+<h4>AWS Sysops Administrator Certification
+Cloud Computing</h4>
+
+&#x2022; &emsp; Introduction to Cloud Computing<br>
+&#x2022; &emsp; Why Cloud Computing?<br>
+&#x2022; &emsp; Benefits of Cloud Computing<br>
+&#x2022; &emsp; Types of Cloud Computing<br>
+&#x2022; &emsp; Public Cloud<br>
+&#x2022; &emsp; Private Cloud<br>
+&#x2022; &emsp; Hybrid Cloud<br>
+&#x2022; &emsp; Community Cloud<br>
+&#x2022; &emsp; Software as a Service<br>
+&#x2022; &emsp; Platform as a Service<br>
+&#x2022; &emsp; Horizontal vs vertical scaling<br>
+&#x2022; &emsp; Cloud Computing Issues<br>
+&#x2022; &emsp; Security<br>
+&#x2022; &emsp; Costing Model<br>
+<h4>What is virtualization?</h4>
+
+&#x2022; &emsp; Virtualization and cloud computing<br>
+&#x2022; &emsp; Types of virtualization<br>
+&#x2022; &emsp; Virtualization terminologies<br>
+&#x2022; &emsp; Hypervisor<br>
+&#x2022; &emsp; Benefits<br>
+&#x2022; &emsp; Vendors<br>
+<h4>AWS Platform</h4>
+
+&#x2022; &emsp; Introduction to AWS Elastic computing<br>
+&#x2022; &emsp; Introduction to the AWS products<br>
+&#x2022; &emsp; Regions and Availability Zones<br>
+&#x2022; &emsp; Signing up for AWS<br>
+&#x2022; &emsp; AWS Free usage tier<br>
+&#x2022; &emsp; Introduction AWS management console<br>
+<h4>EC2 Instance</h4>
+
+&#x2022; &emsp; Understanding AMI<br>
+&#x2022; &emsp; Launching your first AWS instance<br>
+&#x2022; &emsp; On-demand Instance pricing<br>
+&#x2022; &emsp; Reserved Instance pricing<br>
+&#x2022; &emsp; Spot instance pricing<br>
+&#x2022; &emsp; Setting up security<br>
+&#x2022; &emsp; Security groups<br>
+&#x2022; &emsp; Choosing & Creating a new AMI<br>
+&#x2022; &emsp; Public and Private IP’s<br>
+&#x2022; &emsp; Deploying a new instance from the created AMI<br>
+&#x2022; &emsp; Key Pairs<br>
+&#x2022; &emsp; Elastic IP’s<br>
+<h4>Load Balancing</h4>
+
+&#x2022; &emsp; Introduction to Scaling<br>
+&#x2022; &emsp; ELB(Elastic Load Balancer)<br>
+&#x2022; &emsp; Components and types of load balancing<br>
+</div>
